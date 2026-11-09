@@ -1,0 +1,11 @@
+# Konfigurasi Echidna. Jalankan dari folder project ini:
+#   echidna test/echidna/EchidnaV1.sol --contract EchidnaV1 --config echidna.yaml
+#   echidna test/echidna/EchidnaV2.sol --contract EchidnaV2 --config echidna.yaml
+# Syarat: solc 0.8.24 aktif (solc-select install 0.8.24 && solc-select use 0.8.24)
+testMode: property
+prefix: "echidna_"
+testLimit: 100000
+seqLen: 50
+shrinkLimit: 5000
+corpusDir: "echidna-corpus"
+cryticArgs: ["--solc-remaps", "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"]

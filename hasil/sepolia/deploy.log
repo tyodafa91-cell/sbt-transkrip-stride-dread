@@ -1,0 +1,35 @@
+Compiling 39 files with Solc 0.8.24
+Solc 0.8.24 finished in 2.10s
+Compiler run successful!
+Script ran successfully.
+
+== Logs ==
+  V1         : 0x9adEE1e0B506538d651654F6DEF614008ff346CE
+  REG        : 0x6b6693e93a6D643F19983ED84cD099F66A48e5e7
+  V2         : 0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed
+  ADMIN      : 0x2667E67E60D8c58E72EBfB8951662e3996E6C270
+  ACCREDITOR : 0xcc26f10eC7b2c95c26C7235A718dD72Bde8a036C
+  ISSUER     : 0x68861A91D291410b893bEc6ac56cf5D578BdF979
+  Alamat ditulis ke: deployments/11155111.env
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 11155111
+
+Estimated max fee per gas: 0.000000041 gwei
+Estimated base fee per gas: 0.000000017 gwei
+Estimated max priority fee per gas: 0.000000007 gwei
+
+Estimated total gas used for script: 31303760
+
+Estimated amount required: 0.00000000128345416 ETH
+
+==========================
+
+Transactions saved to: /home/tyok/sbt-transkrip/broadcast/DeployAll.s.sol/11155111/run-latest.json
+
+Sensitive values saved to: /home/tyok/sbt-transkrip/cache/DeployAll.s.sol/11155111/run-latest.json
+
+Error: Transaction Failure: 0x1b8335b32cbb2e347f158c8c36a34cf7c6c4cf00182ea1ca45ea4a623691f20a

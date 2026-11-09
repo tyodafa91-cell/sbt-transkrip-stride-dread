@@ -1,0 +1,14 @@
+out/
+cache/
+broadcast/
+echidna-corpus/
+crytic-export/
+deployments/*.env
+.env
+
+keluaran/
+*.rahasia.json
+broadcast/*/11155111/
+lihat_*.txt
+*.bak
+*.sh.bak

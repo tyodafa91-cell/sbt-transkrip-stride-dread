@@ -1,0 +1,1 @@
+mythril Mythril version v0.24.8, solc 0.8.24, -t 2, timeout 600s

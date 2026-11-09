@@ -1,0 +1,18 @@
+{
+  "kontrak": "0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed",
+  "token": "21",
+  "holder": "0xC4C24Ca92B6eDB4cae16ee35627158bbAaBf7894",
+  "versi": "v2",
+  "tokenURI": "ipfs://bafkreiflh26czthq2zsfyy4kzfaeeyxmiof5emun77bwuodte4ko2voiam",
+  "sumber_dokumen": "keluaran/transkrip_PALSU_ipk399.json",
+  "docHash": "0x9c91f8f5aeead8a1c138c1513508c063c2d98bf893588ec40ecfc2bfb210d247",
+  "commitment_dihitung": "0x74c535ddd1af98db271fd8093d6daa0f6c0a4a71c0d1d0f21d1603afdffd7de7",
+  "verify": false,
+  "record": {
+    "commitment_onchain": "0x81320be30573a4c48db71fdba273c02aac0b33c0b9a0cbff7da72267e9790b65",
+    "issuer": "0x68861a91d291410b893bec6ac56cf5d578bdf979",
+    "issuedAt": 1793584932,
+    "revoked": false
+  },
+  "HASIL": "TIDAK VALID"
+}

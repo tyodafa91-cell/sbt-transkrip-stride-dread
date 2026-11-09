@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DFD SBT Transkrip" id="dfd1">
+    <mxGraphModel dx="1162" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#f7f7f7;strokeColor=#999999;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=14;" value="Zona off-chain (luar blockchain)" vertex="1">
+          <mxGeometry height="980" width="570" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#f7f7f7;strokeColor=#999999;verticalAlign=top;align=left;spacingLeft=10;fontStyle=1;fontSize=14;" value="Zona on-chain (blockchain Ethereum: Anvil / Sepolia)" vertex="1">
+          <mxGeometry height="980" width="760" x="660" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=0;html=1;dashed=1;strokeColor=#d80000;strokeWidth=3;fillColor=none;fontColor=#d80000;fontStyle=1;horizontal=0;fontSize=13;" value="TRUST BOUNDARY" vertex="1">
+          <mxGeometry height="980" width="30" x="615" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Accreditor&lt;br&gt;(pemberi akreditasi issuer)" vertex="1">
+          <mxGeometry height="70" width="170" x="70" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Issuer&lt;br&gt;(BAA UMKT)" vertex="1">
+          <mxGeometry height="70" width="170" x="70" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="P5&lt;br&gt;Hitung salted commitment&lt;br&gt;&amp;amp; enkripsi metadata&lt;br&gt;(sbt-tool)" vertex="1">
+          <mxGeometry height="100" width="210" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=10;" value="&lt;b&gt;D3&lt;/b&gt; Storage off-chain (IPFS)&lt;br&gt;metadata transkrip terenkripsi" vertex="1">
+          <mxGeometry height="60" width="270" x="290" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Holder&lt;br&gt;(mahasiswa / wallet)" vertex="1">
+          <mxGeometry height="70" width="170" x="70" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="Verifier&lt;br&gt;(pihak luar)" vertex="1">
+          <mxGeometry height="70" width="170" x="70" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="P1&lt;br&gt;registerIssuer / revokeIssuer&lt;br&gt;(IssuerRegistry)" vertex="1">
+          <mxGeometry height="100" width="230" x="720" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="P3&lt;br&gt;revoke / revokeBatch&lt;br&gt;(kontrak SBT)" vertex="1">
+          <mxGeometry height="100" width="230" x="720" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="P2&lt;br&gt;mint / reissue&lt;br&gt;(kontrak SBT)" vertex="1">
+          <mxGeometry height="110" width="230" x="720" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="P4&lt;br&gt;verify / tokenURI&lt;br&gt;(kontrak SBT, read-only)" vertex="1">
+          <mxGeometry height="110" width="230" x="720" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=12;" value="&lt;b&gt;D1 State blockchain Ethereum&lt;/b&gt;&lt;br&gt;&lt;br&gt;Bagian IssuerRegistry:&lt;br&gt;daftar issuer + status aktif/dicabut&lt;br&gt;&lt;br&gt;Bagian kontrak SBT:&lt;br&gt;token, pemegang, commitment,&lt;br&gt;status dicabut, URI metadata,&lt;br&gt;currentTokenOf" vertex="1">
+          <mxGeometry height="890" width="320" x="1080" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" source="c5" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c11" value="1. tx registerIssuer(alamat issuer)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="c11" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.0562;entryDx=0;entryDy=0;" target="c15" value="2. status issuer&lt;br&gt;+ event">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" source="c6" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.1765;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c7" value="3. data transkrip sintetis + salt">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" edge="1" parent="1" source="c7" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.4259;entryY=0.0000;entryDx=0;entryDy=0;" target="c8" value="4. metadata terenkripsi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" edge="1" parent="1" source="c7" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.6471;entryY=1.0000;entryDx=0;entryDy=0;" target="c6" value="5. commitment + CID">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="415" />
+              <mxPoint x="180" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" source="c6" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.8571;exitDx=0;exitDy=0;entryX=0.0190;entryY=0.3636;entryDx=0;entryDy=0;" target="c13" value="6. tx mint(holder, commitment, URI)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" edge="1" parent="1" source="c15" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.0000;exitY=0.3652;exitDx=0;exitDy=0;entryX=0.9658;entryY=0.3182;entryDx=0;entryDy=0;" target="c13" value="7. status issuer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" edge="1" parent="1" source="c13" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.9658;exitY=0.6818;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4101;entryDx=0;entryDy=0;" target="c15" value="8. token baru&lt;br&gt;+ event Issued">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" edge="1" parent="1" source="c13" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.1143;exitY=0.8182;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c9" value="9. SBT terkunci (non-transferable)">
+          <mxGeometry relative="1" x="0.6" as="geometry">
+            <Array as="points">
+              <mxPoint x="575" y="430" />
+              <mxPoint x="575" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" source="c6" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.1429;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c12" value="10. tx revoke / revokeBatch(tokenId)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="330" />
+              <mxPoint x="680" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" edge="1" parent="1" source="c12" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.2247;entryDx=0;entryDy=0;" target="c15" value="11. status dicabut&lt;br&gt;+ event Revoked">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" edge="1" parent="1" source="c9" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;" target="c10" value="12. tokenId + data&lt;br&gt;transkrip + salt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" edge="1" parent="1" source="c10" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=1.0000;exitY=0.3571;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c14" value="13. eth_call verify(tokenId, holder, commitment)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" edge="1" parent="1" source="c15" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.0000;exitY=0.9382;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c14" value="14. token, status,&lt;br&gt;status issuer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" edge="1" parent="1" source="c14" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" target="c10" value="15. hasil true / false">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="975" />
+              <mxPoint x="155" y="975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" edge="1" parent="1" source="c8" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c10" value="16. metadata terenkripsi (CID)">
+          <mxGeometry relative="1" x="-0.5" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="630" />
+              <mxPoint x="40" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c32" parent="1" style="text;html=1;align=left;fontSize=12;" value="Legenda: kotak biru = entitas eksternal · elips hijau = proses · kotak kuning terbuka = penyimpanan data · panah = aliran data · garis merah putus-putus = trust boundary" vertex="1">
+          <mxGeometry height="30" width="1400" x="20" y="1015" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

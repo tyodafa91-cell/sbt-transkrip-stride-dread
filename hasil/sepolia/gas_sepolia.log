@@ -1,0 +1,20 @@
+>> chain-id 11155111, V1=0x9adEE1e0B506538d651654F6DEF614008ff346CE V2=0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed (tanpa deploy ulang), NIM mulai 2311400001
+putaran 0/5 selesai (pemanasan, dibuang)
+putaran 1/5 selesai
+putaran 2/5 selesai
+putaran 3/5 selesai
+putaran 4/5 selesai
+putaran 5/5 selesai
+
+== Gas Sepolia (rata-rata) ==
+operasi,versi,n,rata2_gas,simpangan_baku
+mint,v1,5,810734.60,5.37
+mint,v2,5,1042059.60,5.37
+revoke,v1,5,130150.00,0.00
+revoke,v2,5,34781.00,0.00
+verify,v1,5,23373.60,5.37
+verify,v2,5,29381.60,5.37
+
+mint    v1=810735 v2=1042060  selisih=+28.53%
+revoke  v1=130150 v2=34781  selisih=-73.28%
+verify  v1=23374 v2=29382  selisih=+25.70%

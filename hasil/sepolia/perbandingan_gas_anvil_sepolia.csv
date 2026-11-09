@@ -1,0 +1,7 @@
+operasi,versi,gas_anvil,gas_sepolia,rasio_sepolia_per_anvil
+mint,v1,193184,810735,4.20
+mint,v2,248166,1042060,4.20
+revoke,v1,48130,130150,2.70
+revoke,v2,33581,34781,1.04
+verify,v1,29027,23374,0.81
+verify,v2,34620,29382,0.85

@@ -1,0 +1,2 @@
+File INVALID_mode_project_0temuan.*: Slither mode project (slither .) memberi 0 temuan karena kontrak penelitian ikut tersaring.
+Hasil yang dipakai: analisis per file (SBTTranskripV1/V2.json, IssuerRegistry.json) dengan --exclude-dependencies.

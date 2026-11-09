@@ -1,0 +1,19 @@
+
+Detector: pragma
+4 different versions of Solidity are used:
+	- Version constraint ^0.8.20 is used by:
+		-^0.8.20 (lib/openzeppelin-contracts/contracts/access/AccessControl.sol#4)
+		-^0.8.20 (lib/openzeppelin-contracts/contracts/utils/Context.sol#4)
+		-^0.8.20 (lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol#4)
+	- Version constraint >=0.8.4 is used by:
+		->=0.8.4 (lib/openzeppelin-contracts/contracts/access/IAccessControl.sol#4)
+	- Version constraint >=0.4.16 is used by:
+		->=0.4.16 (lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol#4)
+	- Version constraint 0.8.24 is used by:
+		-0.8.24 (src/IssuerRegistry.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#different-pragma-directives-are-used
+src/IssuerRegistry.sol analyzed (6 contracts with 102 detectors), 1 result(s) found
+Multiple frameworks detected: Foundry, solc, Solc-json. Using Foundry (highest priority). Use --compile-force-framework to override.
+'forge clean' running (wd: /home/tyok/sbt-transkrip)
+'forge config --json' running
+'forge build --build-info --deny never src/IssuerRegistry.sol' running (wd: /home/tyok/sbt-transkrip)

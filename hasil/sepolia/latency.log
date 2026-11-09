@@ -1,0 +1,16 @@
+run 1/10: mint=8518ms verify=2069ms revoke=6325ms
+run 2/10: mint=11731ms verify=1960ms revoke=7216ms
+run 3/10: mint=11814ms verify=1999ms revoke=7265ms
+run 4/10: mint=10738ms verify=2000ms revoke=5986ms
+run 5/10: mint=12145ms verify=1952ms revoke=8889ms
+run 6/10: mint=10322ms verify=2007ms revoke=7118ms
+run 7/10: mint=12781ms verify=2061ms revoke=7451ms
+run 8/10: mint=12171ms verify=2100ms revoke=18045ms
+run 9/10: mint=12254ms verify=2028ms revoke=17982ms
+run 10/10: mint=23749ms verify=2017ms revoke=8863ms
+
+== Ringkasan latensi (ms), n=10 ==
+mint: rata-rata=12622.30  simpangan_baku=4103.26  n=10
+verify: rata-rata=2019.30  simpangan_baku=46.89  n=10
+revoke: rata-rata=9514.00  simpangan_baku=4573.49  n=10
+Data mentah: data/latency_11155111.csv

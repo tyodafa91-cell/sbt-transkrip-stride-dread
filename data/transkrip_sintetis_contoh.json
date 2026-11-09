@@ -1,0 +1,24 @@
+{
+  "keterangan": "DATA SINTETIS untuk penelitian. Bukan data mahasiswa asli. Field mengikuti Tabel 2.1 proposal (no. 1-10, off-chain).",
+  "identitas": {
+    "nama_mahasiswa": "Mahasiswa Contoh A",
+    "nim": "0000000000001",
+    "program_studi": "S1 Teknik Informatika"
+  },
+  "akademik": {
+    "mata_kuliah": [
+      { "kode": "INF0000", "nama": "Algoritma Contoh", "sks": 3, "nilai_angka": 85.00, "nilai_huruf": "A" },
+      { "kode": "INF0001", "nama": "Basis Data Contoh", "sks": 3, "nilai_angka": 78.50, "nilai_huruf": "B+" },
+      { "kode": "INF0002", "nama": "Jaringan Komputer Contoh", "sks": 2, "nilai_angka": 81.00, "nilai_huruf": "A-" }
+    ],
+    "total_sks": 144,
+    "ipk": 3.50,
+    "predikat_kelulusan": "Sangat Memuaskan"
+  },
+  "administratif": {
+    "tanggal_lulus": "2030-01-01",
+    "tanggal_terbit": "2030-01-15",
+    "nomor_dokumen": "TR-0001",
+    "pejabat_pengesah": "Pejabat Contoh"
+  }
+}

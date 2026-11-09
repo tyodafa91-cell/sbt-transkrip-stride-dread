@@ -1,0 +1,12 @@
+alat,versi,temuan,v1,v2,kategori_stride,keterangan
+Slither,0.11.6,reentrancy-no-eth (mint),Medium,-,Tampering,reentrancy via _safeMint; hilang di V2 (CEI+ReentrancyGuard)
+Slither,0.11.6,reentrancy-benign (mint & reissue),Low x2,-,Tampering,pola sama pada reissue (penerbitan ulang)
+Slither,0.11.6,reentrancy-events (mint & reissue),Low x2,-,Repudiation/Tampering,event dipancarkan setelah panggilan eksternal
+Slither,0.11.6,pragma (beda versi Solidity),Info,Info,-,bukan celah (versi OZ ^0.8.20 vs 0.8.24)
+Mythril,0.24.8,tidak ada SWC (-t 2; timeout 600s),0,0,-,validasi kontrak jebakan menemukan SWC-107/114/115 -> alat normal
+Echidna,2.3.3,echidna_record_immutable,failed,passing,Tampering,metadata dapat diubah setelah mint di V1
+Echidna,2.3.3,echidna_unique_commitment,failed,passing,Tampering,reentrancy saat mint (setReenter+doMint) menerbitkan 2 token dgn commitment sama; konfirmasi dinamis temuan Slither
+Echidna,2.3.3,echidna_outsider_cannot_mint,passing,passing,Elevation of Privilege,akun tanpa hak tidak bisa mint
+Echidna,2.3.3,echidna_soulbound,passing,passing,Elevation of Privilege,token tidak dapat dipindahtangankan
+Echidna,2.3.3,echidna_revoked_cannot_verify,passing,passing,Spoofing,token dicabut ditolak verify
+Echidna,2.3.3,echidna_deaccredited_cannot_mint,-,passing,Spoofing,issuer dicabut akreditasinya tidak bisa mint (hanya V2)

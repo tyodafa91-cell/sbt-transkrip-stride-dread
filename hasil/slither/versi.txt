@@ -1,0 +1,1 @@
+slither 0.11.6, solc 0.8.24, forge 1.8.5

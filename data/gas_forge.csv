@@ -1,0 +1,7 @@
+operasi,versi,n,rata2_gas,simpangan_baku
+mint,v1,10,198846.20,11.62
+mint,v2,10,256631.70,12.20
+verify,v1,10,12360.00,6.65
+verify,v2,10,17957.50,7.09
+revoke,v1,10,53230.90,4.12
+revoke,v2,10,38698.20,4.32

@@ -1,0 +1,25 @@
+id_ancaman,kategori_stride,skor_awal,skor_mitigasi,bukti_uji_manual,bukti_alat_otomatis,bukti_sepolia,status_korelasi
+I-01,Information Disclosure,8.8,2.8,I1 v1: hash tanpa salt terpecahkan 1.165 dari 80.400 tebakan; I2 v2: salted commitment tidak ditemukan,-,Verifier: salt salah -> TIDAK VALID,Terkonfirmasi v1; dimitigasi v2
+S-01,Spoofing,8.6,4.8,S1 v1: klon kontrak lolos verify(); S2 dan S3 v2: mint dari klon/FakeIssuer/EOA ditolak,Echidna deaccredited_cannot_mint v2 passing,-,Terkonfirmasi v1; dimitigasi v2
+I-04,Information Disclosure,8.2,3.2,-,-,Dokumen diunggah ke IPFS dalam bentuk terenkripsi (.enc); isi hanya terbaca setelah didekripsi dengan kunci holder,Mitigasi by design dibuktikan di Sepolia
+T-02,Tampering,7.8,1.4,T3 v1: commitment/metadata berubah tanpa event; T4 v2: record immutable,Echidna record_immutable v1 failed (doMint+doUpdate) / v2 passing,-,Terkonfirmasi v1; dimitigasi v2
+I-03,Information Disclosure,7.8,7.8,-,-,Alamat holder token 21 terbaca publik lewat ownerOf/Etherscan,Risiko residual di luar kontrak
+E-04,Elevation of Privilege,7.4,5.4,E4 v1: kunci owner bocor = ambil alih penuh; E5 v2: dampak dibatasi Accreditor,-,-,Terkonfirmasi; dampak dikurangi (residual)
+R-01,Repudiation,7.0,2.6,R1 v1: revoke/updateRecord/reissue tanpa event; R2 v2: semua operasi penting ber-event + pelaku,Slither reentrancy-events Low (v1 saja),-,Terkonfirmasi v1; dimitigasi v2
+S-03,Spoofing,6.8,5.0,S5 v2: klon + registry palsu lolos verify() di dirinya sendiri,-,Alamat resmi V2 dan REG terverifikasi di Etherscan (dasar address pinning),Risiko residual di luar kontrak
+I-02,Information Disclosure,6.8,3.2,I3: calldata mint tidak memuat NIM/IPK/SKS mentah,-,On-chain hanya commitment dan URI IPFS,Mitigasi by design dibuktikan uji
+D-01,Denial of Service,6.8,2.6,D1 v1: revokeMany gagal di sekitar 1.190 token; D2 v2: dibatasi 50 per transaksi,-,-,Terkonfirmasi v1; dimitigasi v2
+S-04,Spoofing,6.4,4.6,E5 v2: issuer bocor diputus Accreditor; S6 v2: issuer dicabut -> verify gagal dan tidak bisa mint,Echidna deaccredited_cannot_mint v2 passing,-,Terkonfirmasi; dampak dikurangi (residual)
+T-01,Tampering,6.0,1.6,T1 v1: 1 commitment jadi 2 token; T2 v2: diblok ReentrancyGuard + CEI,Slither reentrancy-no-eth Medium + benign/events Low (v1 saja); Echidna unique_commitment v1 failed (setReenter+doMint) / v2 passing; Mythril tidak mendeteksi,-,Terkonfirmasi v1; dimitigasi v2
+D-02,Denial of Service,6.0,5.2,-,-,Verifikasi berhasil lewat RPC publik (publicnode) yang berbeda dari RPC deploy (Infura) dan gateway Pinata,Mitigasi by design dibuktikan di Sepolia
+E-01,Elevation of Privilege,6.0,5.4,E1 v1 dan E2 v2: fungsi admin revert; uji negatif on-chain: mint/revoke/reissue/grantRole/registerIssuer REVERT,Echidna outsider_cannot_mint v1 dan v2 passing,-,Tidak berhasil di kedua versi
+E-03,Elevation of Privilege,5.8,5.2,E2 v2: issuer tidak bisa menaikkan hak; uji negatif: issuer daftarkan dirinya lagi REVERT,-,Deploy memakai 3 akun berbeda; hasRole Accreditor dan Issuer = true,Mitigasi by design dibuktikan uji
+T-05,Tampering,5.4,2.0,"Telaah kode Sesi 2; test_v1_reissue_twiceFromOldToken_createsTwoActiveTokens (v1: 2 token aktif); test_v2_reissue_twiceFromOldToken_reverts (v2: revert, currentTokenOf); T5 v2: commitment dicabut tidak bisa diterbitkan ulang",Echidna unique_commitment v2 passing,-,Terkonfirmasi v1; dimitigasi v2
+E-02,Elevation of Privilege,5.4,5.4,E3 v1 dan v2: transfer/approve revert; uji negatif 10 percobaan REVERT,Echidna soulbound v1 dan v2 passing,-,Tidak berhasil di kedua versi
+T-04,Tampering,5.2,4.0,-,-,"Dokumen dipalsukan (IPK 3,50 -> 3,99): docHash berubah, verify false, TIDAK VALID; dokumen asli VALID",Mitigasi by design dibuktikan di Sepolia
+T-03,Tampering,4.8,3.8,-,Mythril tidak menemukan SWC-114 pada V1/V2,-,Tidak diuji langsung (dikaji)
+S-02,Spoofing,4.4,4.2,S4 v1 dan v2: verify() dengan alamat mahasiswa yang benar = false; uji negatif: verify alamat penyerang = false,-,-,Tidak berhasil di kedua versi
+D-03,Denial of Service,4.2,3.6,test_v2_reissue_toNewWallet dan test_v2_reissue_onlyOriginalActiveIssuer_andValidHolder: token diterbitkan ulang ke dompet baru,-,-,Mitigasi by design dibuktikan uji
+N-02,Tampering,4.0,3.6,-,-,-,Dikaji literatur (Batasan 1.5)
+S-05,Spoofing,3.6,3.2,Uji fungsional reissue (prosedur pemulihan),-,-,Tidak diuji langsung (dikaji)
+N-01,Spoofing,3.4,3.0,-,-,-,Dikaji literatur (Batasan 1.5)

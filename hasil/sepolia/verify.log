@@ -1,0 +1,69 @@
+Start verifying contract `0x9adEE1e0B506538d651654F6DEF614008ff346CE` deployed on sepolia
+Constructor args: 0x00000000000000000000000068861a91d291410b893bec6ac56cf5d578bdf979
+
+Verifying on etherscan...
+Submitting verification for [src/v1/SBTTranskripV1.sol:SBTTranskripV1] 0x9adEE1e0B506538d651654F6DEF614008ff346CE.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `464e1qqima7ffkekdxkce6e6i4ync5ylzrzclbsvqk3bsetgjr`
+	URL: https://sepolia.etherscan.io/address/0x9adee1e0b506538d651654f6def614008ff346ce
+464e1qqima7ffkekdxkce6e6i4ync5ylzrzclbsvqk3bsetgjr	https://sepolia.etherscan.io/address/0x9adee1e0b506538d651654f6def614008ff346ce
+
+Verifying on sourcify...
+Submitting verification for [SBTTranskripV1] 0x9adEE1e0B506538d651654F6DEF614008ff346CE.
+Submitted contract for verification:
+	Verification Job ID: `d37ecb93-90cf-406b-8a3f-5b8dcf38ab00`
+	URL: https://sourcify.dev/server/verify-ui/jobs/d37ecb93-90cf-406b-8a3f-5b8dcf38ab00
+d37ecb93-90cf-406b-8a3f-5b8dcf38ab00	https://sourcify.dev/server/verify-ui/jobs/d37ecb93-90cf-406b-8a3f-5b8dcf38ab00
+
+Waiting for etherscan verification result...
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+Start verifying contract `0x6b6693e93a6D643F19983ED84cD099F66A48e5e7` deployed on sepolia
+Constructor args: 0x0000000000000000000000002667e67e60d8c58e72ebfb8951662e3996e6c270
+
+Verifying on etherscan...
+Submitting verification for [src/IssuerRegistry.sol:IssuerRegistry] 0x6b6693e93a6D643F19983ED84cD099F66A48e5e7.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `bzp9rxrxvxru6ibmgflszsxrni43e4bh3buynqz2mnfw4nfjb6`
+	URL: https://sepolia.etherscan.io/address/0x6b6693e93a6d643f19983ed84cd099f66a48e5e7
+bzp9rxrxvxru6ibmgflszsxrni43e4bh3buynqz2mnfw4nfjb6	https://sepolia.etherscan.io/address/0x6b6693e93a6d643f19983ed84cd099f66a48e5e7
+
+Verifying on sourcify...
+Submitting verification for [IssuerRegistry] 0x6b6693e93a6D643F19983ED84cD099F66A48e5e7.
+Submitted contract for verification:
+	Verification Job ID: `745dd15e-7661-4d6d-a2ca-5538739522b2`
+	URL: https://sourcify.dev/server/verify-ui/jobs/745dd15e-7661-4d6d-a2ca-5538739522b2
+745dd15e-7661-4d6d-a2ca-5538739522b2	https://sourcify.dev/server/verify-ui/jobs/745dd15e-7661-4d6d-a2ca-5538739522b2
+
+Waiting for etherscan verification result...
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+Start verifying contract `0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed` deployed on sepolia
+Constructor args: 0x0000000000000000000000002667e67e60d8c58e72ebfb8951662e3996e6c2700000000000000000000000006b6693e93a6d643f19983ed84cd099f66a48e5e7
+
+Verifying on etherscan...
+Submitting verification for [src/v2/SBTTranskripV2.sol:SBTTranskripV2] 0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `xdvtr9uym7unismaruecyhfj6cc3mz4jtz7ylakkvqdt8ywpiw`
+	URL: https://sepolia.etherscan.io/address/0x1391f73af1cc5c6da639fe969f3be30e725773ed
+xdvtr9uym7unismaruecyhfj6cc3mz4jtz7ylakkvqdt8ywpiw	https://sepolia.etherscan.io/address/0x1391f73af1cc5c6da639fe969f3be30e725773ed
+
+Verifying on sourcify...
+Submitting verification for [SBTTranskripV2] 0x1391f73af1Cc5C6da639fe969F3Be30e725773Ed.
+Submitted contract for verification:
+	Verification Job ID: `0cabaf5e-8f25-4e4c-8d1d-c11757d56836`
+	URL: https://sourcify.dev/server/verify-ui/jobs/0cabaf5e-8f25-4e4c-8d1d-c11757d56836
+0cabaf5e-8f25-4e4c-8d1d-c11757d56836	https://sourcify.dev/server/verify-ui/jobs/0cabaf5e-8f25-4e4c-8d1d-c11757d56836
+
+Waiting for etherscan verification result...
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified

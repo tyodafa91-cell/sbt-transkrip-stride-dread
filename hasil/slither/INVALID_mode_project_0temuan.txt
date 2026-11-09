@@ -1,0 +1,4 @@
+. analyzed (25 contracts with 102 detectors), 0 result(s) found
+'forge clean' running (wd: /home/tyok/sbt-transkrip)
+'forge config --json' running
+'forge build --build-info --deny never --skip ./test/** ./script/** --force' running (wd: /home/tyok/sbt-transkrip)

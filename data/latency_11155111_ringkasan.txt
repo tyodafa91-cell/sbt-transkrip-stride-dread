@@ -1,0 +1,3 @@
+mint: rata-rata=12622.30  simpangan_baku=4103.26  n=10
+verify: rata-rata=2019.30  simpangan_baku=46.89  n=10
+revoke: rata-rata=9514.00  simpangan_baku=4573.49  n=10
