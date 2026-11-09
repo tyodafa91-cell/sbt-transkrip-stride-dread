@@ -47,7 +47,7 @@ Status: DRAF, disesuaikan peneliti (arahan Pak Faldi).
 - Setelah mitigasi (v2): (5, 2, 6, 3, 4) → rata-rata 4.0. Commitment bergaram + verifier read-only membuat pemalsuan dokumen makin sulit.
 - Rekomendasi: Verifier wajib mencocokkan dokumen dengan commitment lewat sbt-tool sebelum menerima transkrip.
 
-## T-05 — Terbit ulang dua kali dari token lama menghasilkan 2 token aktif untuk 1 commitment (v1; temuan fuzzing)
+## T-05 — Terbit ulang dua kali dari token lama menghasilkan 2 token aktif untuk 1 commitment (v1; temuan telaah kode Sesi 2)
 - Setelah uji (v1): (6, 10, 4, 4, 3) → rata-rata 5.4. Tes reissue: v1 menghasilkan 2 token aktif bila reissue dipanggil dua kali dari token lama.
 - Setelah mitigasi (v2): (1, 1, 4, 1, 3) → rata-rata 2.0. currentTokenOf menolak reissue dari token lama (test_v2_reissue_twiceFromOldToken_reverts).
 - Rekomendasi: Lacak token terbaru (currentTokenOf); uji dengan fuzzing/invariant Echidna.

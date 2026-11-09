@@ -74,7 +74,7 @@ Skor: D=6, R=8, E=8, A=3, Di=6 → rata-rata 6.2
 - Affected users (3): Terbatas pada dokumen yang dipalsukan.
 - Discoverability (6): Terlihat bila verifier tidak mencocokkan commitment.
 
-## T-05 — Terbit ulang dua kali dari token lama menghasilkan 2 token aktif untuk 1 commitment (v1; temuan fuzzing)
+## T-05 — Terbit ulang dua kali dari token lama menghasilkan 2 token aktif untuk 1 commitment (v1; temuan telaah kode Sesi 2)
 Skor: D=6, R=8, E=4, A=4, Di=3 → rata-rata 5.0
 - Damage (6): Dua token aktif untuk satu transkrip membingungkan status kepemilikan.
 - Reproducibility (8): Deterministik bila reissue dipanggil dua kali dari token lama.
