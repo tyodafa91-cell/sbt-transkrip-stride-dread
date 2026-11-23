@@ -3,15 +3,15 @@
 Kode dan data penelitian Tyo Daffa Sukardi (S1 Teknik Informatika UMKT). **Semua data sintetis.**
 Jangan pernah memasukkan data mahasiswa asli ke blockchain atau IPFS.
 
-Catatan kerja per sesi (19 Oktober sampai 9 November 2026), termasuk percobaan yang gagal, ada di `catatan.md`.
+
 
 ## Status eksperimen
 | Bagian | Hasil | File |
 |---|---|---|
-| DFD | 4 entitas eksternal, 5 proses, 2 penyimpanan data (D1, D2), 16 aliran data, 1 trust boundary | `docs/gambar/DFD_SBT_Transkrip.drawio.png`, `docs/gambar/DFD_SBT_Transkrip_v2.drawio` |
+| DFD | 4 entitas eksternal, 5 proses, 2 penyimpanan data (D1, D2), 17 aliran data, 1 node RPC, 1 trust boundary | `docs/gambar/DFD_SBT_Transkrip.drawio.png` (versi revisi), `docs/gambar/DFD_SBT_Transkrip_v2.drawio` (sumber versi awal) |
 | STRIDE | 24 ancaman pada 7 komponen (S 6, T 6, R 1, I 4, D 3, E 4) | `data/dread_penilaian.csv` |
 | DREAD | Awal 8 Tinggi / 14 Sedang / 2 Rendah (rata-rata 6,18); setelah uji 7/15/2 (6,11); setelah mitigasi 1/10/13 (3,90) | `data/dread_hasil.csv`, `docs/ALASAN_DREAD_*.md`, `docs/RUBRIK_DREAD.md` |
-| Model ancaman akhir dan korelasi | 20 dari 24 ancaman punya bukti uji; 7 terbukti di v1 dan tertutup di v2 | `data/model_ancaman_akhir.csv`, `data/korelasi_stride_empiris.csv` |
+| Model ancaman akhir dan korelasi | 20 dari 24 ancaman punya bukti uji; 9 terbukti di v1: 6 tertutup di v2, 3 berkurang dampaknya | `data/model_ancaman_akhir.csv`, `data/korelasi_stride_empiris.csv` |
 | `forge test` | 36 lulus (23 skenario serangan, 11 fungsional, 1 gas, 1 kelompok invarian) | `test/` |
 | Uji negatif Anvil | 24/24 sesuai harapan | `data/uji_negatif_31337.csv` |
 | Slither 0.11.6 | v1: 6 temuan (1 Medium, 4 Low, 1 Info); v2: 1 Info; IssuerRegistry: 1 Info | `hasil/slither/` |
@@ -88,7 +88,7 @@ Prasyarat: Foundry, Node.js LTS (≥18), `openssl`, `python3`, bash 5+ (Linux/WS
   Yang dibandingkan adalah selisih v2 terhadap v1 di jaringan yang sama.
 - `hasil/slither/INVALID_mode_project_0temuan.*` tidak dipakai (lihat `hasil/slither/BACA_DULU.txt`).
   Hasil Slither yang dipakai adalah analisis per file.
-- `hasil/sepolia/latency_INVALID_percobaan1.csv` tidak dipakai (masalah format waktu `date`, lihat `catatan.md`).
+- `hasil/sepolia/latency_INVALID_percobaan1.csv` tidak dipakai (masalah format waktu `date`).
 
 ## Keamanan
 - Semua kunci privat = akun testnet khusus. Jangan dikirim ke siapa pun, jangan di-commit (`.env`, `keluaran/` sudah di `.gitignore`).
