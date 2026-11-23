@@ -5,12 +5,12 @@ import {Base} from "./Base.t.sol";
 import {SBTTranskripV1} from "../src/v1/SBTTranskripV1.sol";
 
 /// @notice D = Denial of Service. Skenario (Tabel 2.4): pencabutan massal dengan N bertambah
-///         dibandingkan batas gas blok.
+/// dibandingkan batas gas per transaksi (EIP-7825).
 ///         Catatan: angka gas di sini perkiraan dari Foundry (di luar 21.000 gas dasar transaksi
 ///         dan biaya calldata). Ukur ulang di Anvil/Sepolia untuk angka yang dilaporkan.
 contract AttackDoSTest is Base {
-    /// Batas gas per blok yang dipakai sebagai patokan. Cek nilai jaringan sebenarnya:
-    ///   cast block latest --rpc-url <RPC> --field gasLimit
+    /// Patokan: batas gas per transaksi EIP-7825 (2^24 = 16.777.216 gas),
+    ///   berlaku terlepas dari batas gas blok.
     uint256 internal constant BLOCK_GAS_LIMIT = 16_777_216;
 
     function _freshV1WithTokens(uint256 n)
@@ -26,7 +26,7 @@ contract AttackDoSTest is Base {
         vm.stopPrank();
     }
 
-    /// D1 (v1): revokeMany tanpa batas. Makin besar N, makin dekat ke batas gas blok.
+    /// D1 (v1): revokeMany tanpa batas. Makin besar N, makin dekat ke batas gas per transaksi.
     function test_D1_v1_unboundedRevokeMany_exceedsBlockGasLimit() public {
         uint256[4] memory ns = [uint256(100), 500, 1000, 1500];
         bool smallOk;
@@ -52,7 +52,7 @@ contract AttackDoSTest is Base {
             );
         }
         assertTrue(smallOk); // N kecil lolos
-        assertFalse(bigOk); // N besar tidak muat dalam satu blok: pencabutan massal macet
+        assertFalse(bigOk); // N besar melampaui batas gas per transaksi: pencabutan massal macet
     }
 
     /// D2 (v2): revokeBatch dibatasi MAX_REVOKE_PER_TX. N besar dipecah jadi beberapa transaksi.
