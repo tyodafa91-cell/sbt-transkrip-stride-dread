@@ -11,7 +11,7 @@ import {SBTTranskripV1} from "../src/v1/SBTTranskripV1.sol";
 contract AttackDoSTest is Base {
     /// Batas gas per blok yang dipakai sebagai patokan. Cek nilai jaringan sebenarnya:
     ///   cast block latest --rpc-url <RPC> --field gasLimit
-    uint256 internal constant BLOCK_GAS_LIMIT = 30_000_000;
+    uint256 internal constant BLOCK_GAS_LIMIT = 16_777_216;
 
     function _freshV1WithTokens(uint256 n)
         internal
