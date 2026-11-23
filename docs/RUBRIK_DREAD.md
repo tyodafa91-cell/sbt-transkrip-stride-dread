@@ -29,7 +29,7 @@ meminta patokan lain, ubah tabel ini SEBELUM mulai memberi skor, lalu pakai kons
 
 ## Cara mengisi
 1. Satu baris = satu ancaman. Beri skor 1–10 untuk kelima parameter pada tahap yang sedang dikerjakan.
-2. Tulis **satu kalimat alasan per parameter** di `catatan.md` (penguji akan bertanya "kenapa 7, bukan 5?").
+2. Tulis **satu kalimat alasan per parameter** untuk setiap skor (lihat `docs/ALASAN_DREAD_AWAL.md` dan `docs/ALASAN_DREAD_UJI_MITIGASI.md`).
 3. Jalankan `./scripts/hitung_dread.sh`. Hasil: `data/dread_hasil.csv` dan `data/model_ancaman_akhir.csv`.
 4. Ancaman yang hanya dikaji lewat literatur (N-01, N-02) tetap diberi skor, tetapi tulis bahwa dasarnya
    literatur, bukan pengujian. Skor `_uji` untuk baris seperti itu = skor awal yang ditinjau ulang.
